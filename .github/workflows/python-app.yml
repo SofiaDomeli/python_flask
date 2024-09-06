@@ -28,8 +28,16 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
     - name: Teste 
-      run: coverage run -m app_teste.py
+      run: coverage run -m app_test.py
 
     - name: Relatorio do teste
       run: coverage report -m
+
+    - name: Render Deploy Action
+      uses: johnbeynon/render-deploy-action@v0.0.8
+      with:
+        service-id: srv-crddqnrtq21c73d2d5ag
+        api-key: rnd_IcbrR2EIFa6apZawYZdu2bdNApCv
+          
+    
       
