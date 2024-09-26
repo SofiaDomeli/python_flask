@@ -36,8 +36,8 @@ jobs:
     - name: Render Deploy Action
       uses: johnbeynon/render-deploy-action@v0.0.8
       with:
-        service-id: srv-crddqnrtq21c73d2d5ag
-        api-key: rnd_IcbrR2EIFa6apZawYZdu2bdNApCv
+        service-id: srv-croerb56l47c73fn516g
+        api-key: rnd_klhMvPyDbq4rsEaVmgX5uqwQlsW9
 
     - name: Deploy no EC2 -AWS
       run: |
